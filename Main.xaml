@@ -80,19 +80,15 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="659,671" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1519,671" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Flowchart sap:VirtualizedContainerService.HintSize="600,648" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+    <Flowchart sap:VirtualizedContainerService.HintSize="1536,355.224" sap2010:WorkflowViewState.IdRef="Flowchart_1">
       <Flowchart.Variables>
-        <Variable x:TypeArguments="x:Int32" Name="Counter">
-          <Variable.Default>
-            <Literal x:TypeArguments="x:Int32" Value="1" />
-          </Variable.Default>
-        </Variable>
+        <Variable x:TypeArguments="x:Int32" Default="1" Name="Counter" />
         <Variable x:TypeArguments="x:Boolean" Name="ShouldStop" />
       </Flowchart.Variables>
       <sap:WorkflowViewStateService.ViewState>
@@ -158,16 +154,13 @@
                   </sap:WorkflowViewStateService.ViewState>
                 </ui:ShouldStop>
                 <FlowStep.Next>
-                  <FlowDecision x:Name="__ReferenceID3" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="60,60" sap2010:WorkflowViewState.IdRef="FlowDecision_1">
-                    <FlowDecision.Condition>
-                      <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="ShouldStop" />
-                    </FlowDecision.Condition>
+                  <FlowDecision x:Name="__ReferenceID3" Condition="[ShouldStop]" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="60,60" sap2010:WorkflowViewState.IdRef="FlowDecision_1">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <av:Point x:Key="ShapeLocation">640,470</av:Point>
                         <av:Size x:Key="ShapeSize">60,60</av:Size>
-                        <av:PointCollection x:Key="TrueConnector">640,500 609.9999999999999,500 609.9999999999999,530 535,530</av:PointCollection>
+                        <av:PointCollection x:Key="TrueConnector">640,500 610,500 610,530 535,530</av:PointCollection>
                         <av:PointCollection x:Key="FalseConnector">700,500 920,500 920,335</av:PointCollection>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
@@ -179,7 +172,7 @@
                             <av:Size x:Key="ShapeSize">110,70</av:Size>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:LogMessage sap2010:Annotation.AnnotationText="Log Message if the process has" DisplayName="" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Warn" Message="[&quot;The process was Stopped&quot;]">
+                        <ui:LogMessage sap2010:Annotation.AnnotationText="Log Message if the process has" DisplayName="warn message process stop" sap:VirtualizedContainerService.HintSize="334,141" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Warn" Message="[&quot;The process is Stopped&quot;]">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
